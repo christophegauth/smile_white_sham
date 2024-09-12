@@ -99,13 +99,34 @@
 }
 @media screen and (max-width: 428px) {
   .testimonials{
-    padding: 9rem 3rem;
+    padding: 9rem 3rem 5rem 3rem;
   }
   .testimonials h2{
     font-size: 22px;
   }
   .testimonials h3 {
     font-size: 28px;
+  }
+  .slider ul {
+    width: 400%; /* S'assurer que la largeur de la liste est 100% */
+  }
+  .slider ul li {
+    width: 100%; /* Chaque élément de liste occupe 100% de la largeur de la fenêtre */
+  }
+  .next-btn, .back-btn{
+    position: absolute;
+    top: 70%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 8px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #0d0f73;
+  }
+  .back-btn{
+    right: auto;
+    left: 0;
   }
 }
 @media screen and (max-width:375px) {
@@ -116,6 +137,28 @@
     font-size: 28px;
   }
   .testimonials{
-    padding: 13rem 3rem;
+    padding: 13rem 3rem 5rem 3rem;
+  }
+  .slider ul {
+    width: 400%;
+  }
+  .slider ul li {
+    width: 100%;
+  }
+  .next-btn, .back-btn{
+    position: absolute;
+    top: 70%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 8px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #0d0f73;
+
+  }
+  .back-btn{
+    right: auto;
+    left: 0;
   }
 }
